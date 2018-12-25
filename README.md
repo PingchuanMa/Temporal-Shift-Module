@@ -1,7 +1,7 @@
 # Temporal-Shift-Module
 
 Unofficial implementation for paper Temporal Shift Module
-for Efficient Video Understanding [1](#tsm).
+for Efficient Video Understanding [[1]](#tsm).
 
 To use this implementation, simply import the utility with:
 
@@ -10,8 +10,7 @@ from tsm_util as tsm
 ```
 
 Here we use 2D CNN baseline from Temporal Segment Networks
-[2](#tsn) with 2D CNN backbone of ResNet
-[3](#resnet).
+[[2]](#tsn) with 2D CNN backbone of ResNet [[3]](#resnet).
 
 ## Reference
 
