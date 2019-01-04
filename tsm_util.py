@@ -10,7 +10,7 @@ def tsm(tensor, duration, version='zero'):
                                                          size[1] // 4,
                                                          size[1] // 2], dim=2)
     if version == 'zero':
-        pre_tensor  = F.pad(pre_tensor, (0, 0, 0, 0, 0, 0, 1, 0))[:,  :-1, ...]
+        pre_tensor  = F.pad(pre_tensor,  (0, 0, 0, 0, 0, 0, 1, 0))[:,  :-1, ...]
         post_tensor = F.pad(post_tensor, (0, 0, 0, 0, 0, 0, 0, 1))[:, 1:  , ...]
     elif version == 'circulant':
         pre_tensor  = torch.cat((pre_tensor [:, -1:  , ...],
